@@ -77,7 +77,11 @@
 <!-- CTA -->
 <section id="pesan" class="py-20 bg-amber-600 text-white text-center">
     <h3 class="text-3xl font-bold mb-6">Siap Menikmati Hidangan Kami?</h3>
+<<<<<<< HEAD
     <a href="/reservasi/tambah-reservasi" class="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold">Reservasi Sekarang</a>
+=======
+    <a href="/reservasi" class="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold">Reservasi Sekarang</a>
+>>>>>>> d53463473ff3b879db2ab452a05fcaaeceafc98d
 </section>
 
 <!-- Footer -->

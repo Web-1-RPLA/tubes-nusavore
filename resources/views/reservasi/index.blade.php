@@ -63,7 +63,11 @@
 
                 <div>
                     <label class="block font-medium mb-1">Catatan Tambahan</label>
+<<<<<<< HEAD
                     <textarea name="description " rows="4"
+=======
+                    <textarea na"
+>>>>>>> d53463473ff3b879db2ab452a05fcaaeceafc98d
                         class="w-full border rounded-lg p-3 focus:ring focus:ring-amber-200"
                         placeholder="Contoh: dekat jendela, ulang tahun, dll"></textarea>
                 </div>
