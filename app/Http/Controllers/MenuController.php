@@ -13,7 +13,9 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return view('menu/index');
+        $menus = Menu::latest()->get();
+
+        return view('menu.index', compact('menus'));
     }
 
     /**
@@ -21,7 +23,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-        return view('menu/create');
+
     }
 
     /**
@@ -29,18 +31,7 @@ class MenuController extends Controller
      */
     public function store(StoreMenuRequest $request)
     {
-        $ValidateData = $request->validate([
-            'name' => 'required|max:255',
-            'description' => 'required',
-            'price' => 'required|integer',
-            'image' => 'image|file|max:1024'
-        ]);
-
-        if ($request->file('image')) {
-            $ValidateData['image'] = $request->file('image')->store('menu-images');
-        }
-        Menu::create($ValidateData);
-        return redirect('/menu');
+        
     }
 
     /**
