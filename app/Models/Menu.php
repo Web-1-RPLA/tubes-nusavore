@@ -9,5 +9,19 @@ class Menu extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $table = 'menus';
+
+    protected $primaryKey = 'menu_id';
+
+    public $incrementing = true;
+
+    protected $keyType = 'int';
+
+    protected $fillable = [
+        'name',
+        'description',
+        'price',
+        'category',
+        'image'
+    ];
 }
